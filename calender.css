@@ -1,0 +1,53 @@
+.container
+{
+margin-top:6rem;
+}
+.calender
+{
+width:fit-content;
+margin:auto;
+}
+table
+{
+border-collapse:collapse;
+}
+td,th
+{
+border:1px solid #999;
+padding:0.5rem;
+text-align:left;
+}
+tr th:first-child
+{
+color:red;
+}
+tr td:first-child
+{
+color:red;
+}
+thead th
+{
+font-family:monospace;
+font-size:larger;
+font-weight:bolder;
+}
+thead tr
+{
+background-color:#04b6e2;
+}
+.calender-container
+{
+border:2px solid black;
+}
+.title-month
+{
+display:flex;
+justify-content:space-between;
+background-color:#e4e4e4cc;
+}
+.title-month button
+{
+background-color:none;
+/*border:none*/
+}
+

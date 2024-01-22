@@ -1,0 +1,35 @@
+<html>
+<body>
+<center>
+<table border="1">
+<tr>
+<th>ID</th>
+<th>UserName</th>
+<th>Password</th>
+</tr>
+<?php
+$servername="localhost";
+$username="root";
+$password="";
+$dbname="newphp";
+$conn=mysqli_connect($servername,$username,$password,$dbname);
+if(!$conn)
+{
+die(mysqli_connect_error());
+}
+echo"Login";
+$sql="SELECT Id,UserName,Password FROM Login";
+$result=$conn->query($sql);
+if($result->num_rows>0)
+while($row=$result->fetch_assoc())
+{
+echo
+"<tr><td>",$row["Id"],</td><td>",$row["UserName"],"</td><td>",$row["Password"],"</td></tr>";
+}
+echo"</table>";
+$conn->close();
+?>
+</table>
+</center>
+</body>
+</html>
